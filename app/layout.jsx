@@ -28,12 +28,14 @@ export default function RootLayout({ children }) {
         <nav className="p-4 bg-slate-100 flex gap-4">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/product">Product</Link>
+
+          <Link href="/product/1">Product Detail 1 </Link>
         </nav>
 
         {/* Dynamic Page Content */}
-        <main className="p-4 flex-1">
-          {children}
-        </main>
+        <main className="p-4 flex-1">{children}</main>
       </body>
     </html>
   );
