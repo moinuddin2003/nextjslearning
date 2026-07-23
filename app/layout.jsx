@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         {/* Persistent Navbar */}
-        <nav className="p-4 bg-slate-100 flex gap-4">
+        <nav className="p-4 bg-amber-800 flex gap-4">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
