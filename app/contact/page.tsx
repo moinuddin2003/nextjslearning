@@ -1,11 +1,16 @@
 import React from "react";
+import { submitForm } from "./action";
 
-const page = () => {
+const contactPage = () => {
   return (
-    <>
-      <div>THis is the Page from Contact Page</div>
-    </>
+    <form action={submitForm}>
+      <input name="name" />
+
+      <input name="email" />
+
+      <button>Submit</button>
+    </form>
   );
 };
 
-export default page;
+export default contactPage;
