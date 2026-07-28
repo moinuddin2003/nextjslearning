@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/product">Product</Link>
-
           <Link href="/product/1">Product Detail 1 </Link>
+          <Link href="/login">Login</Link>
         </nav>
 
         {/* Dynamic Page Content */}
