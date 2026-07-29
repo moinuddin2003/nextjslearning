@@ -1,3 +1,4 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -33,9 +34,9 @@ export default function RootLayout({ children }) {
           <Link href="/product/1">Product Detail 1 </Link>
           <Link href="/login">Login</Link>
         </nav>
-
-        {/* Dynamic Page Content */}
-        <main className="p-4 flex-1">{children}</main>
+        <ClerkProvider>
+          <main className="p-4 flex-1">{children}</main>
+        </ClerkProvider>
       </body>
     </html>
   );
